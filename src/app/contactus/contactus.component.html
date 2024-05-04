@@ -1,0 +1,44 @@
+<section class="contactus">
+    <div      
+    class="login col-lg-4 m-auto shadow-lg">
+        <form [formGroup]="form" action="javascript:void(0)" (submit)="send()">
+          <div class="mb-3">
+            <label for="fname" class="form-label">Full Name*:</label>
+            <input formControlName="fname"
+                   type="text" 
+                   name="fname"
+                   id="fname"
+                   placeholder="Full Name"
+                   class="form-control">            
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address*:</label>
+            <input formControlName="email"
+                   type="email" 
+                   name="email"
+                   id="email"
+                   placeholder="Email"
+                   class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="mobileNumber" class="form-label">Mobile Number:</label>
+            <input formControlName="mobileNumber"
+                   type="text" 
+                   name="mobileNumber"
+                   id="mobileNumber"
+                   placeholder="Mobile Number"
+                   class="form-control">
+          </div>          
+          <div class="mb-3">
+            <label for="msg" class="form-label">Message*:</label>
+            <input formControlName="msg"
+                   type="text" 
+                   name="msg"
+                   id="msg"
+                   placeholder="Message"
+                   class="form-control">           
+          </div>
+            <button type="submit" class="btn btn-primary col-lg-12">Submit</button>
+          </form>
+    </div>
+</section>

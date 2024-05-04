@@ -1,0 +1,61 @@
+<section class="course">
+    <div class="container">
+        <h1 class="text-center">All Courses</h1>
+        <h6>Backend</h6>
+        <div class="row mt-5">
+            <div class="col-lg-3 mb-5" *ngFor="let cs of courses">
+                <div class="box">
+                    <img src="{{cs.image}}" width="100%"/>
+                    <h4 class="mt-2">{{cs.name}}</h4>
+                    <p class="mt-2">{{cs.description}}</p>
+                    <!-- <button class="btn btn-primary btn-lg mt-2" (click)="showPDF(cs.buttonVal)">                         -->
+                        <a href={{cs.pdflink}}>{{cs.buttonVal}}</a>
+                    <!-- </button> -->
+                </div>
+            </div>
+        </div>
+
+        <h6>Web Technology</h6>
+        <div class="row mt-5">
+            <div class="col-lg-3 mb-5" *ngFor="let cs of webTechnology">
+                <div class="box">
+                    <img src="{{cs.image}}" width="100%"/>
+                    <h4 class="mt-2">{{cs.name}}</h4>
+                    <p class="mt-2">{{cs.description}}</p>
+                    <!-- <button class="btn btn-primary btn-lg mt-2" (click)="showPDF(cs.buttonVal)">                         -->
+                        <a href={{cs.pdflink}}>{{cs.buttonVal}}</a>
+                    <!-- </button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div *ngIf="showDiv.angular">
+        <iframe class="pdf"
+                src=
+            "../../assets/Angular_4Syllabus.pdf"
+            width="800" height="500">
+        </iframe>
+    </div>
+    <div *ngIf="showDiv.typescript">
+        <iframe class="pdf"
+                src=
+                "../../assets/Typescript_with_Angular4Syllabus.pdf"
+            width="800" height="500">
+        </iframe>
+    </div> -->
+    <!-- <div *ngIf="showDiv.react"> -->
+        <!-- <iframe class="pdf"
+                src=
+                "../../assets/ReactJSSyllabus.pdf"
+            width="900" height="900">
+        </iframe> -->
+        <!-- <a href="../../assets/ReactJSSyllabus.pdf"></a>
+    </div>
+    <div *ngIf="showDiv.nodejs">
+        <iframe class="pdf"
+                src=
+                "../../assets/NodeJSSyllabus.pdf"
+            width="800" height="500">
+        </iframe>
+    </div> -->
+</section>
